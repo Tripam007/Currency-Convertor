@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f6d365, #fda085);
+  padding: 1rem;
+}
+
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+form input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+  background-color: #f9f9f9;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.section label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+.select-box {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  background-color: #f9f9f9;
+}
+
+.select-box img {
+  width: 50px;
+  margin-right: 0.6rem;
+}
+
+.select-box select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  width: 100%;
+  appearance: none;
+}
+
+.swap-section {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.swap-icon {
+  width: 28px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.swap-icon:hover {
+  transform: rotate(180deg);
+}
+
+.msg {
+  text-align: center;
+  padding: 0.75rem;
+  background-color: #e6f5ea;
+  color: #2e7d32;
+  border-radius: 0.6rem;
+  border: 1px solid #b2e0c6;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.convert-btn {
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1.1rem;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.convert-btn:hover {
+  background-color: #005f8f;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .select-box {
+    flex-direction: row;
+  }
+
+  .swap-icon {
+    width: 24px;
+  }
+}
